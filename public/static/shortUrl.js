@@ -5,7 +5,7 @@ window.addEventListener('load',()=>{
     const copy = document.querySelector(".copy");
 
     shortUrl.addEventListener('click',()=>{
-        const urlPath="";
+        const urlPath="https://url-shortner-himateja.herokuapp.com/";
         const options = {"long_url":input.value};
         const request = new Request(urlPath+"urls",{
             method: 'POST',
