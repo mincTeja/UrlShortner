@@ -19,6 +19,7 @@ window.addEventListener('load',()=>{
         fetch(request)
         .then(res => res.json())
         .then(id =>{
+            console.log(id);
             urlPath = urlPath + id;
             output.innerHTML=urlPath;
         });
