@@ -15,7 +15,7 @@ router.post('/',(req,res)=>{
     const shortId = shortid.generate();
     const long_url = req.body.long_url;
     urls[shortId] = long_url;
-    res.status(200).send(shortId);
+    res.status(200).send({"id":shortId});
 });
 
 router.get('/:id',(req,res)=>{
