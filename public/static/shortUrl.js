@@ -13,7 +13,9 @@ window.addEventListener('load',()=>{
         const request = new Request(urlPath+"urls",{
             method: 'POST',
             headers: new Headers({
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+
             }),
             body:JSON.stringify(options)
         });
