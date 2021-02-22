@@ -7,7 +7,13 @@ window.addEventListener('load',()=>{
     shortUrl.addEventListener('click',()=>{
         const urlPath="";
         const options = {"long_url":input.value};
-        const request = new Request(urlPath+"urls",{body:`'${options}'`});
+        const request = new Request(urlPath+"urls",{
+            method: 'POST',
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            }),
+            body:`'${options}'`
+        });
         fetch(request)
         .then(res => res.json())
         .then(id =>{
