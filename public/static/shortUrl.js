@@ -7,6 +7,7 @@ window.addEventListener('load',()=>{
     shortUrl.addEventListener('click',()=>{
         const urlPath="https://url-shortner-himateja.herokuapp.com/";
         const options = {"long_url":input.value};
+        console.log(options);
         const request = new Request(urlPath+"urls",{
             method: 'POST',
             headers: new Headers({
