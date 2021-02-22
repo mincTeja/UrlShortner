@@ -12,4 +12,4 @@ app.get('/',(req,res)=>{
 app.get('/:id',(req,res)=>{
     res.redirect(`/urls/${req.params.id}`);
 })
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
