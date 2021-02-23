@@ -21,8 +21,8 @@ window.addEventListener('load',()=>{
         .then(res => res.json())
         .then(data =>{
             console.log("data"+data);
-            urlPath = urlPath + data.id;
-            output.innerHTML=urlPath;
+            // urlPath = urlPath + data.id;
+            output.innerHTML=data.id;
         });
     });
 });
