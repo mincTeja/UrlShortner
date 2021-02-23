@@ -21,6 +21,7 @@ window.addEventListener('load',()=>{
         .then(res => res.json())
         .then(data =>{
             console.log("data"+data);
+            console.log(data.id);
             // urlPath = urlPath + data.id;
             output.innerHTML=data.id;
         });
