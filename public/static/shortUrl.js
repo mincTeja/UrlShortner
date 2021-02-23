@@ -22,7 +22,7 @@ window.addEventListener('load',()=>{
         .then(data =>{
             // urlPath = urlPath + data.id;
             console.log(urlPath+data.id);
-            output.innerHTML=data.id;
+            output.value=data.id;
             
         });
     });
