@@ -18,7 +18,10 @@ window.addEventListener('load',()=>{
         console.log(options);
         const request = new Request('https://url-shortner-himateja.herokuapp.com/urls',options);
         fetch(request)
-        .then(res => res.json())
+        .then(res => {
+            console.log(res);
+            return res.json();
+        })
         .then(data =>{
             console.log("data"+data);
             console.log(data.id);
