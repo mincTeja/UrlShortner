@@ -21,7 +21,7 @@ router.post('/',(req,res)=>{
 router.get('/:id',(req,res)=>{
     console.log(req);
     const long_url = urls[req.params.id];
-    res.send(long_url);
+    res.redirect(long_url);
 });
 
 
